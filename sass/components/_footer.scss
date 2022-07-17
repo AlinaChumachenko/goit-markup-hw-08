@@ -1,0 +1,27 @@
+footer {
+    background-color: #2F303A;
+
+    padding-top: var(--typical-padding-midi);
+    padding-bottom: var(--typical-padding-midi);
+
+    .container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .logo-blue {
+        margin-right: 0;
+    }
+}
+
+.contacts__logo-white {
+    color: var(--hero-text-color);
+    margin-right: 156px;
+}
+ 
+.options {
+    margin-left: 93px;
+}
+
+
+

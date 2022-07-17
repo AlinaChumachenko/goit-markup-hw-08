@@ -1,0 +1,28 @@
+.auth {
+    display: flex;
+    margin-left: auto;   
+}
+
+.auth__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.auth__link {
+    transition: color 250ms var(--time-variable);
+
+    color: var(--title-text-color);
+    @include font(500, 14px, 1.14, 0.02em);
+    @include align-list;
+    justify-content: center;
+    fill: #757575;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);   
+}
+}
+
+.auth__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}

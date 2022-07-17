@@ -1,0 +1,28 @@
+.location {
+    font-style: normal;
+
+    margin-top: 20px;
+}
+
+.location__text {
+    color: var(--hero-text-color);
+
+    margin-bottom: 9px;
+}
+
+.location__link {
+    transition: color 250ms var(--time-variable);
+
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.location__item:not(:last-child) {
+    margin-bottom: 9px;
+}

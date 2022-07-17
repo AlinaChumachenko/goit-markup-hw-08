@@ -1,0 +1,10 @@
+.container-title {
+    color: var(--primary-text-color);
+    @include font(700, 28px, 1.17, 0.03em);
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+    @include font(null, 36px, null, null);
+    }
+    
+    margin-bottom: var(--typical-margin-maxi);
+}

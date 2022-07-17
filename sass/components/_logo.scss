@@ -1,0 +1,9 @@
+.logo-blue {
+    @include align-list;
+   
+    color: var(--accent-color);
+    font-family: Raleway, Tahoma, sans-serif;
+    @include font(700, 26px, 1.19, 0.03em);
+
+    margin-right: 93px;
+}
