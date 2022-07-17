@@ -1,7 +1,5 @@
 .blok-our-featires {
     padding-top: var(--typical-padding-maxi);
-    padding-bottom: var(--typical-padding-maxi);
-    
 }
 
 .our-featires {
@@ -13,13 +11,12 @@
 .our-featire__item {
     width: 100%;
     @media screen and (min-width: 768px) {
-        width: calc(100% / 2 - 30px); 
+        width: calc((100% - 30px) / 2);
     }
     @media screen and (min-width: 1200px) {
-        width: calc(100% / 4 - 30px);
+        width: calc((100% - 90px) / 4);
     }
     
-
     &::before{
         display: block;
         content: "";
@@ -32,6 +29,7 @@
         margin-bottom: 30px;
         background-size: 70px;
     }
+
 }
 
 .icon-antenna::before {
@@ -52,17 +50,25 @@
 
 .our-featire__title {
     color: var(--primary-text-color);
-    @include font(700, 14px, 1.17, 0.03em);
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: var(--typical-margin-midi);
-
+    text-align: center; 
     @media screen and (min-width: 768px) {
+       text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
         text-align: left;
     }
+    
+    
+    
  }
 
 .our-featire__text {
     width: 100%;
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
 }
 

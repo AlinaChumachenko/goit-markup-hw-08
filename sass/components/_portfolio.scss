@@ -1,7 +1,21 @@
-.menu-button{
+.menu-button {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+}
+    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+}
+}
+
+.menu-button__item {
+    margin-top: 15px;
+
 }
 
 .menu-button__btn {
@@ -16,10 +30,6 @@
     cursor: pointer;
     font-family: inherit;
     @include font(500, 16px, 1.63, 0.03em);
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.63;
-    // letter-spacing: 0.03em;
     text-align: center;
     padding: 6px 22px;
 
@@ -33,7 +43,7 @@
 }
 }
 
-.menu-button__btn--active{
+.menu-button__btn--active {
     color: var(--hero-text-color);
     background-color: var(--accent-color);
 }
@@ -49,32 +59,27 @@
 .list-works {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+    gap: 30px;
 
     .denotement__title {
         color: var(--primary-text-color);
         @include font(700, 18px, 2, 0.06em);
-        // font-weight: 700;
-        // font-size: 18px;
-        // line-height: 2;
-        // letter-spacing: 0.06em;
-    
         margin-bottom: var(--typical-margin-mini);
     }
 
     .denotement__topic {
         @include font(null, 16px, 1.88, 0.03em);
-        // font-size: 16px;
-        // line-height: 1.88;
-        // letter-spacing: 0.03em;
-    }
+       }
 }
 
 .list-works__card {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+    }
  }
 
  .list-works__link {
