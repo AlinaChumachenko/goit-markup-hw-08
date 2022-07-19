@@ -1,5 +1,6 @@
 .menu {
-    @include align-list;
+    display: none;
+    // @include align-list;
 }
 
 .menu__item {
