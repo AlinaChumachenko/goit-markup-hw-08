@@ -20,14 +20,14 @@
      <!-- Шапкpа страницы -->
     <header class="header">
         <div class="container">
-        <nav class="navigation">
-            <a href="./index.html" class="logo-blue link">Web<span class="navigation__logo-black link">Studio</span></a>
-            <ul class="menu">
-                <li class="menu__item"><a class="menu__link link" href="./index.html">Студия</a></li>
-                <li class="menu__item"><a class="menu__link menu__link--current link" href="./portfolio.html"><span class="menu__portfolio-blue">Портфолио</span></a></li>
-                <li class="menu__item"><a class="menu__link link" href="">Контакты</a></li>
-            </ul>
-        </nav>
+            <nav class="navigation">
+                <a href="./index.html" class="logo-blue link">Web<span class="navigation__logo-black link">Studio</span></a>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link link" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--current link" href="./portfolio.html"><span class="menu__portfolio-blue">Портфолио</span></a></li>
+                    <li class="menu__item"><a class="menu__link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
             <ul class="auth">
                 <li class="auth__item">
                     <a class="auth__link link" href="mail:info@devstudio.com">
@@ -44,8 +44,55 @@
                     </a>
                 </li>
             </ul>
-        </div>    
-    </header>
+            <!-- Кнопка для открытия мобильного меню -->
+            <button type="button" class="button-open">
+                <svg class="button-open__icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- Мобильное меню -->
+        <div class="mob-menu is-hidden">
+            <div class="mob-conteiner">
+                <div class="mob-menu__top">
+                    <button type="button" class="mob-menu__button-close">
+                        <svg class="mob-menu__icon" width="19" height="19">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu__list">
+                        <li class="mob-menu__item"><a class="mob-menu__link link" href="./index.html">Студия</a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link  mob-menu__link--current link" href="./portfolio.html"><span class="menu__portfolio-blue">Портфолио</span></a></li>
+                        <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu__bottom">
+                    <ul class="mob-menu__list-auth">
+                        <li class="mob-menu__item-tel">
+                            <a class="mob-menu__link-auth link" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mob-menu__item-mob">
+                            <a class="mob-menu__link-auth link" href="mail:info@devstudio.com">
+                            info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mob-menu__list-social">
+                        <li class="mob-menu__item-social"><a class="mob-menu__link-social link"
+                                href="https://instagram.com/" rel="noopener noreferrer nofollow" >Instagram</a></li>
+                        <li class="mob-menu__item-social"><a class="mob-menu__link-social link"
+                                href="https://twitter.com/" rel="noopener noreferrer nofollow" >Twitter</a></li>
+                        <li class="mob-menu__item-social"><a class="mob-menu__link-social link"
+                                href="https://faacebook.com/" rel="noopener noreferrer nofollow" >Facebook</a></li>
+                        <li class="mob-menu__item-social"><a class="mob-menu__link-social link"
+                                href="https://www.linkedin.com/" rel="noopener noreferrer nofollow" >Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+        </header>
     <!-- Уникальный контент страницы -->
     <main>
     <section class="portfolio section">
@@ -222,6 +269,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

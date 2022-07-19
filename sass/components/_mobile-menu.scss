@@ -1,5 +1,5 @@
 .button-open {
-    display: block;
+        display: block;
     padding: 0;
     margin-left: auto;
 
@@ -11,10 +11,10 @@
         &:hover,
         &:focus {
         fill: var(--accent-color);
-        }
+    }
     @media screen and (min-width: 768px) {
         display: none;
-        }
+    }    
 }
 
 .button-open__icon {
@@ -34,14 +34,10 @@
     width: 100%;
     padding: 10px 15px 48px 40px;
     margin: 0 auto;
-
-
+    
 }
  
 .mob-menu {
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
     position: fixed;
     z-index: 2;
     background-color: #FFFFFF;
@@ -49,6 +45,9 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
 }
 
@@ -74,7 +73,6 @@
     align-items: center;
     justify-content: center;
     margin: auto;
- 
 }
 
 .mob-menu__link {
@@ -118,6 +116,7 @@
     @include font(500, 24px, 1.17, 0.02em);
     text-align: left;
     color: #757575;
+    margin-bottom: 64px;
 
 }
 .mob-menu__item-social {

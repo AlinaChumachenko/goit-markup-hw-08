@@ -1,26 +1,40 @@
 .auth {
     display: none;
-    // display: flex;
-    margin-left: auto;   
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-left: auto; 
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;        
+    }
 }
+
+.auth__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 
 .auth__item:not(:first-child) {
+    @media screen and (min-width: 1200px) {
     margin-left: 50px;
+    }
 }
-
 .auth__link {
     transition: color 250ms var(--time-variable);
 
     color: var(--title-text-color);
     @include font(500, 14px, 1.14, 0.02em);
     @include align-list;
+    @media screen and (min-width: 1200px) {
     justify-content: center;
+    }
+    
     fill: #757575;
 
     &:hover,
     &:focus {
     color: var(--accent-color);   
-}
+    }
 }
 
 .auth__icon {
