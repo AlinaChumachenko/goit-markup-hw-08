@@ -720,10 +720,11 @@ footer {
   padding-bottom: var(--typical-padding-midi);
 }
 footer .container {
-  display: block;
-}
-footer .logo-blue {
-  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .contacts__logo-white {
@@ -731,6 +732,7 @@ footer .logo-blue {
 }
 
 .location {
+  text-align: center;
   font-style: normal;
   margin-top: 20px;
 }
@@ -761,6 +763,7 @@ footer .logo-blue {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--hero-text-color);
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -770,7 +773,10 @@ footer .logo-blue {
 }
 
 .subscription {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .subscription__input {
@@ -804,7 +810,7 @@ footer .logo-blue {
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 12px;
+  margin-top: 20px;
 }
 
 .subscription__icon {
