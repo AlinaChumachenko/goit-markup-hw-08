@@ -1,8 +1,6 @@
 .subscription {
-    // display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center; 
     @media screen and (min-width: 1200px) {
         display: flex;
         
@@ -22,6 +20,10 @@
     color: var(--hero-text-color);
     transition: border 250ms var(--time-variable),
     box-shadow 250ms var(--time-variable);
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        justify-content: center;
+    }
     @media screen and (min-width: 1200px) {
         display: flex;
         width: 358px;
@@ -48,9 +50,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
-    @media screen and (min-width: 1200px) {
-       
-    }    
+     
 }
 
 .subscription__icon {
