@@ -8,6 +8,9 @@
     opacity: 1;
     transition: opacity 250ms var(--time-variable), 
     visibility 250ms var(--time-variable);
+    z-index: 2;
+    overflow-y: scroll;
+    
 }
 
 .bacdrop.is-hidden .service-order {
@@ -19,12 +22,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scaleX(1);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: var(--hero-text-color);
     border-radius: 4px;
     transition: transform 250ms var(--time-variable);
     padding: 40px;
+    @media screen and (min-width: 768px) {
+        width: 528px;
+        min-height: 581px; 
+    }
 }
 
 .service-order__close-btn {
@@ -57,12 +64,15 @@
 }
 
 .service-order__title {
-    @include font(700, 16px, 1.15, null);
+    @include font(700, 20px, 1.5, 0.03em);
     text-align: center;
         
     color: #212121;
 
     margin-bottom: 12px;
+    @media screen and (min-width: 768px) {
+        @include font(null, null, 1.17, null);
+    }
 }
 
 .modall__input {
@@ -161,6 +171,10 @@
 
 .modal__check-text {
     @include align-list;
+    @include font(null, 12px, 1.17, 0.03em);
+    @media screen and (min-width: 1200px) {
+        m@include font(null, 14px, 1.71, null);
+    }
 
     a {
         color: var(--accent-color);
