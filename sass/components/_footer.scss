@@ -5,17 +5,49 @@ footer {
     padding-bottom: var(--typical-padding-midi);
 
     .container {
-        display: flex;
-        align-items: center;
+         @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+        }
+        
+    }
+    .logo-blue {
         justify-content: center;
-        flex-direction: column;
-        gap: 30px;
+        text-align: center;
+        margin-right: 0;
+           
+    }     
+}   
+    
+
+.contacts__logo-white {
+    color: var(--hero-text-color);
+    @media screen and (min-width: 1200px) {
+        margin-right: 156px;
+        
+    }      
+}
+
+.options {
+    @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    }
+}
+.contacts {
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
     }
 
 }
 
-.contacts__logo-white {
-    color: var(--hero-text-color);
-    
+.divs {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
 }
+
+
+
  

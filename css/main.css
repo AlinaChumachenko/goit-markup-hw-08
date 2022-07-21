@@ -719,22 +719,57 @@ footer {
   padding-top: var(--typical-padding-midi);
   padding-bottom: var(--typical-padding-midi);
 }
-footer .container {
-  display: flex;
   align-items: center;
+@media screen and (min-width: 1200px) {
+  footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+footer .logo-blue {
   justify-content: center;
-  flex-direction: column;
-  gap: 30px;
+  text-align: center;
+  margin-right: 0;
 }
 
 .contacts__logo-white {
   color: var(--hero-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__logo-white {
+    margin-right: 156px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .options {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .divs {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 
 .location {
   text-align: center;
   font-style: normal;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .location {
+    text-align: left;
+  }
 }
 
 .location__text {
@@ -755,6 +790,17 @@ footer .container {
 .location__item:not(:last-child) {
   margin-bottom: 8px;
 }
+@media screen and (min-width: 1200px) {
+  .location__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 768x) {
+  .join {
+    display: flex;
+  }
+}
 
 .join__text {
   display: block;
@@ -767,6 +813,16 @@ footer .container {
   margin-top: 60px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .join__text {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join__text {
+    text-align: left;
+  }
+}
 
 .join-color {
   background-color: rgba(255, 255, 255, 0.1);
@@ -774,14 +830,17 @@ footer .container {
 }
 
 .subscription {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .subscription {
+    display: flex;
+  }
+}
 
 .subscription__input {
-  display: flex;
   padding: 15px 16px;
   width: 450px;
   height: 50px;
@@ -792,6 +851,12 @@ footer .container {
   outline: transparent;
   color: var(--hero-text-color);
   transition: border 250ms var(--time-variable), box-shadow 250ms var(--time-variable);
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    display: flex;
+    width: 358px;
+  }
 }
 .subscription__input:focus {
   border: 1px Solid var(--accent-color);
@@ -813,7 +878,6 @@ footer .container {
   padding-bottom: 10px;
   margin-top: 20px;
 }
-
 .subscription__icon {
   align-items: center;
   margin-left: 10px;

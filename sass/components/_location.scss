@@ -3,12 +3,13 @@
     font-style: normal;
 
     margin-top: 20px;
-      
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }  
 }
 
 .location__text {
     color: var(--hero-text-color);
-
     margin-bottom: 9px;
 }
 
@@ -27,4 +28,7 @@
 
 .location__item:not(:last-child) {
     margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }

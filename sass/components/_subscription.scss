@@ -1,14 +1,16 @@
 .subscription {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        
+    }
     
 }
 
-
 .subscription__input {
-    display: flex;
     padding: 15px 16px;
     width: 450px;
     height: 50px;
@@ -20,6 +22,10 @@
     color: var(--hero-text-color);
     transition: border 250ms var(--time-variable),
     box-shadow 250ms var(--time-variable);
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 358px;
+    }
 
     &:focus {
         border: 1px Solid var(--accent-color);
@@ -42,6 +48,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+       
+    }    
 }
 
 .subscription__icon {
