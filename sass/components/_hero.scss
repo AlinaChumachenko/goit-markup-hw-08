@@ -6,16 +6,50 @@
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), 
-    url(../images/team-work-img.jpg);  
+            url(../images/header-mob-1x.jpg); 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/header-mob-2x.jpg);
+}
     background-repeat: no-repeat;  
     background-position: center;
     background-size: cover;
    
     padding-top: 200px;
     padding-bottom: 200px; 
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/header-tab-1x.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/header-tab-2x.jpg);
+    }
 }
-
-   
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/team-work-img.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../images/header-desk-2x.jpg);
+    }
+}
+}   
 .container__title {
     color: var(--hero-text-color);
     @include font(900, 26px, 1.62, 0.06em);

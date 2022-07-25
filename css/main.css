@@ -719,7 +719,6 @@ footer {
   padding-top: var(--typical-padding-midi);
   padding-bottom: var(--typical-padding-midi);
 }
-  align-items: center;
 @media screen and (min-width: 1200px) {
   footer .container {
     display: flex;
@@ -832,7 +831,6 @@ footer .logo-blue {
 .subscription {
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
   .subscription {
@@ -851,6 +849,12 @@ footer .logo-blue {
   outline: transparent;
   color: var(--hero-text-color);
   transition: border 250ms var(--time-variable), box-shadow 250ms var(--time-variable);
+}
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    display: flex;
+    margin: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input {
@@ -878,6 +882,7 @@ footer .logo-blue {
   padding-bottom: 10px;
   margin-top: 20px;
 }
+
 .subscription__icon {
   align-items: center;
   margin-left: 10px;
@@ -892,6 +897,8 @@ footer .logo-blue {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--time-variable), visibility 250ms var(--time-variable);
+  z-index: 2;
+  overflow-y: scroll;
 }
 
 .bacdrop.is-hidden .service-order {
@@ -903,12 +910,18 @@ footer .logo-blue {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleX(1);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: var(--hero-text-color);
   border-radius: 4px;
   transition: transform 250ms var(--time-variable);
   padding: 40px;
+}
+@media screen and (min-width: 768px) {
+  .service-order {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .service-order__close-btn {
@@ -939,11 +952,17 @@ footer .logo-blue {
 
 .service-order__title {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.15;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .service-order__title {
+    line-height: 1.17;
+  }
 }
 
 .modall__input {
@@ -1044,6 +1063,9 @@ footer .logo-blue {
 .modal__check-text {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .modal__check-text a {
   color: var(--accent-color);
