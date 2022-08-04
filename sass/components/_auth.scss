@@ -13,20 +13,23 @@
     margin-bottom: 10px;
 }
 
-
 .auth__item:not(:first-child) {
     @media screen and (min-width: 1200px) {
     margin-left: 50px;
     }
 }
-.auth__link {
-    transition: color 250ms var(--time-variable);
 
+.auth__link {
+    @media screen and (min-width: 768px) {
+    transition: color 250ms var(--time-variable);
     color: var(--title-text-color);
-    @include font(500, 14px, 1.14, 0.02em);
+    @include font(500, 12px, 1.17, 0.02em);
     @include align-list;
+    }
+    
     @media screen and (min-width: 1200px) {
     justify-content: center;
+    @include font(500, 14px, 1.14, 0.02em);
     }
     
     fill: #757575;

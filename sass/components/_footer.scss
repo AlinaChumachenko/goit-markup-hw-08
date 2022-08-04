@@ -17,27 +17,26 @@ footer {
         margin-right: 0;
            
     }     
-}   
-    
+}    
 
 .contacts__logo-white {
     color: var(--hero-text-color);
     @media screen and (min-width: 1200px) {
         margin-right: 156px;
-        
     }      
 }
+
+.contacts {
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-right: 165px;
+    } 
+}
+
 
 .options {
     @media screen and (min-width: 1200px) {
     margin-left: 93px;
     }
-}
-.contacts {
-    @media screen and (min-width: 768px) {
-        margin-right: 165px;
-    }
-
 }
 
 .divs {
@@ -47,7 +46,3 @@ footer {
         align-items: baseline;
     }
 }
-
-
-
- 
